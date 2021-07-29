@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "59836b79-cd2c-4643-a5a5-9691c37b1b3f",
+		"name": "TestTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create tasks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"nueva tarea 6\",\n    \"expirationDate\": \"2021-07-27\",\n    \"completed\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "update tasks/6100ec559cf96a3a2cd32a8d",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"expirationDate\": \"2021-07-28\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/tasks/6100ec559cf96a3a2cd32a8d"
+			},
+			"response": []
+		},
+		{
+			"name": "get by id tasks/6100e2b339bc002c35e8b31d",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/tasks/6100e2b339bc002c35e8b31d"
+			},
+			"response": []
+		},
+		{
+			"name": "delete tasks/6100ec559cf96a3a2cd32a8d",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/tasks/6100ec559cf96a3a2cd32a8d"
+			},
+			"response": []
+		},
+		{
+			"name": "get tasks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMDBmODIxN2U3MDE2NGIwMzA2OTRiNiIsIm5hbWUiOiJKVUFOIiwiZW1haWwiOiJqdWFuX3JpdmVyYTk5QGhvdG1haWwuY29tIiwiaWF0IjoxNjI3NDU3MjM3LCJleHAiOjE2Mjc2MzAwMzd9.DxshibvEHyyspwQVCg3uXxe15WY4ty2r2li6VQDw8MQ"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "get users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMDBmODIxN2U3MDE2NGIwMzA2OTRiNiIsIm5hbWUiOiJKVUFOIiwiZW1haWwiOiJqdWFuX3JpdmVyYTk5QGhvdG1haWwuY29tIiwiaWF0IjoxNjI3NDU3MjM3LCJleHAiOjE2Mjc2MzAwMzd9.DxshibvEHyyspwQVCg3uXxe15WY4ty2r2li6VQDw8MQ"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "create users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"JUAN\",\n    \"email\": \"juan_rivera@hotmail.com\",\n    \"password\": \"1234567890\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"juan_rivera99@hotmail.com\",\n    \"password\": \"1234567890\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users/login"
+			},
+			"response": []
+		},
+		{
+			"name": "get users/6100f8217e70164b030694b6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/users/6100f8217e70164b030694b6"
+			},
+			"response": []
+		},
+		{
+			"name": "update users/6100fd0184f59b518f9b0127",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"JUAN DANIEL\",\n    \"email\": \"daniel@hotmail.com\",\n    \"password\": \"0987654321\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users/6100fd0184f59b518f9b0127"
+			},
+			"response": []
+		},
+		{
+			"name": "get by id tasks/6100e2b339bc002c35e8b318",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/tasks/6100e2b339bc002c35e8b318"
+			},
+			"response": []
+		}
+	]
+}
